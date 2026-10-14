@@ -11,6 +11,11 @@ const require = createRequire(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+
+
+// Add this inside your existing BrowserWindow options:
+
+
 // Reload Electron while developing.
 try {
     const electronReload = require('electron-reload');
@@ -30,7 +35,8 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: false,
             contextIsolation: true
-        }
+        },
+        icon: path.join(__dirname, "favicon.ico")
     });
 
     mainWindow.setMenuBarVisibility(false);
