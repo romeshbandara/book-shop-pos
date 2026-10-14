@@ -1,3 +1,4 @@
+
 {
   "name": "book-shop-pos",
   "version": "1.0.3",
@@ -6,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build:exe": "electron-builder",
+    "build:exe": "electron-builder --win",
     "release": "npm run build:frontend && electron-builder --publish always"
   },
   "keywords": [],
@@ -31,6 +32,22 @@
     "directories": {
       "output": "dist-exe"
     },
+    "files": [
+      "main.js",
+      "favicon.ico",
+      "backend/**/*",
+      "frontend/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "favicon.ico"
+    },
+    "nsis": {
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "BookShop POS"
+    },
     "publish": [
       {
         "provider": "github",
@@ -38,16 +55,6 @@
         "repo": "book-shop-pos"
       }
     ]
-  },
-  "files": [
-    "main.js",
-    "backend/**/*",
-    "frontend/**/*",
-    "package.json"
-  ],
-  "win": {
-    "target": "nsis",
-    "icon": "favicon.ico"
   },
   "devDependencies": {
     "electron": "^44.7.2",
