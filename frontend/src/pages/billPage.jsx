@@ -6,7 +6,7 @@ export default function BillPage(){
                 
             </div>
             <div className="w-[500px] h-[700px] bg-white rounded-2xl">
-                
+                <h1>Hellow world</h1>
             </div>
         </div>
         </>
