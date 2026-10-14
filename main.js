@@ -44,6 +44,8 @@ function createWindow() {
     }
 }
 
+autoUpdater.checkForUpdatesAndNotify()
+
 autoUpdater.on('update-downloaded', (info) => {
     dialog.showMessageBox({
         type: 'info',
