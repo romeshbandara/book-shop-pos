@@ -5,7 +5,7 @@ export default function BillPage(){
             <div className="w-[500px] h-[500px] bg-white rounded-2xl">
                 
             </div>
-            <div className="w-[500px] h-[700px] bg-red-600 rounded-2xl">
+            <div className="w-[500px] h-[700px] bg-blue-600 rounded-2xl">
                 <h1>Hellow world</h1>
             </div>
         </div>
