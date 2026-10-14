@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build:exe": "electron-builder"
+    "build:exe": "electron-builder",
+    "release": "npm run build:frontend && electron-builder --publish always"
   },
   "keywords": [],
   "author": "",
