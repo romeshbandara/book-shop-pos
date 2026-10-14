@@ -25,12 +25,19 @@
     "tailwindcss": "^4.3.3"
   },
   "build": {
-    "appId": "com.pos.desktop",
-    "productName": "BookShop POS",
-    "directories": {
-      "output": "dist-exe"
-    }
+  "appId": "com.pos.desktop",
+  "productName": "BookShop POS",
+  "directories": {
+    "output": "dist-exe"
   },
+  "publish": [
+    {
+      "provider": "github",
+      "owner": "romeshbandara",
+      "repo": "book-shop-pos"
+    }
+  ]
+},
   "files": [
     "main.js",
     "backend/**/*",
@@ -46,3 +53,4 @@
     "electron-builder": "^26.15.3"
   }
 }
+
