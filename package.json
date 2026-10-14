@@ -1,4 +1,3 @@
-
 {
   "name": "book-shop-pos",
   "version": "1.0.3",
@@ -46,7 +45,10 @@
     "nsis": {
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "BookShop POS"
+      "shortcutName": "BookShop POS",
+      "installerIcon": "favicon.ico",
+      "uninstallerIcon": "favicon.ico",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
     },
     "publish": [
       {
